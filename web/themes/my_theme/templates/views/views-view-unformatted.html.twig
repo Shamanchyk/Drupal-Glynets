@@ -1,0 +1,5 @@
+{% for row in rows %}
+  <div{{ row.attributes.addClass('views-row', 'swiper-slide') }}>
+    {{- row.content -}}
+  </div>
+{% endfor %}

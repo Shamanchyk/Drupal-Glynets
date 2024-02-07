@@ -1,0 +1,189 @@
+@import "breakpoints";
+.header{
+  width: 100%;
+  height: 100px;
+  background: $blue;
+  position: fixed;
+  z-index: 100;
+  @include breakpoints(xl){
+    height: 80px;
+  }
+  @include breakpoints(lgm){
+    height: 70px;
+  }
+
+  .header_main{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    @include breakpoints(xl){
+      justify-content: space-between;
+    }
+  }
+
+  .block-block-content2caf2999-a1c7-4bb7-ab3e-9e6624cad551{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    width: 35%;
+    @include breakpoints(xl){
+      gap: 10px;
+      width: 25%;
+      margin-left: 50px;
+
+      img{
+        width: 100%;
+      }
+    }
+    @include breakpoints(lg){
+      margin-left: 25px;
+      width: 30%;
+    }
+    @include breakpoints(md){
+      margin-left: 25px;
+      width: 35%;
+    }
+    @include breakpoints(sm){
+      width: 60%;
+    }
+    @include breakpoints(sms){
+      width: 90%;
+    }
+  }
+
+  .hamburger{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    @include breakpoints(md){
+      display: block;
+      padding: 20px 0;
+      position: fixed;
+      top: 50px;
+      right: 40px;
+      z-index: 2;
+    }
+  }
+  .hamburger-line{
+    background-color: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+  }
+  .hamburger-line::before,
+  .hamburger-line::after{
+    background-color: #fff;
+    content: '';
+    display: block;
+    position: absolute;
+    transition: all 0.3s;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hamburger-line::before{
+    top: 7px
+  }
+  .hamburger-line::after{
+    top: -7px
+  }
+
+  .menu--main{
+    width: 60%;
+
+      .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 64px;
+        margin-left: 0;
+
+        @include breakpoints(xl){
+          gap: 40px;
+        }
+        @include breakpoints(lg){
+          margin-right: 25px;
+          gap: 25px;
+          justify-content: space-between;
+        }
+        @include breakpoints(lgm){
+          gap: 0;
+        }
+        @include breakpoints(md){
+          display: none;
+          width: 300px;
+          min-width: 0;
+          height: 100%;
+          position: fixed;
+          background: #27a9df;
+          top: 0;
+          right: 0;
+          padding: 140px 0 20px 39px;
+          font-size: 24px;
+          z-index: 1;
+          overflow-y: scroll;
+          margin-right: 0;
+        }
+        @include breakpoints(sm){
+          width: 100%;
+          padding-top: 95px;
+          font-size: 35px;
+        }
+
+        li{
+          padding-top: 0;
+          a{
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 110%;
+            color: $white;
+            @include breakpoints(lgm){
+              font-size: 16px;
+            }
+            @include breakpoints(sm){
+              font-size: 20px;
+            }
+
+            &:hover{
+              color: yellow;
+              transition: all .2s ease;
+            }
+          }
+        }
+
+        .is-active{
+          color: yellow;
+        }
+      }
+  }
+
+  .menu.active{
+    display: block;
+    transition: all 0.5s;
+  }
+  .hamburger.active{
+    right: 30px;
+  }
+  .hamburger.active .hamburger-line{
+    background-color: transparent;
+  }
+
+  .hamburger.active .hamburger-line::before{
+    transform: rotate(-45deg);
+    top: 0;
+    width: 20px;
+  }
+  .hamburger.active .hamburger-line::after{
+    transform: rotate(45deg);
+    top: 0;
+    width: 20px;
+  }
+}
+
+.lock{
+  overflow-y: hidden;
+}
+

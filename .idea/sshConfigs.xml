@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="wn8welrx8v.schools.glyanec.net" id="f20254a1-f806-48a8-81ea-a50e565b3533" port="22" nameFormat="DESCRIPTIVE" username="wn8welrx8v" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>

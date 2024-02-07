@@ -1,0 +1,15 @@
+global-styling:
+  version: VERSION
+  css:
+    theme:
+      scss/styles.scss: {}
+  js:
+    js/main.js: {}
+
+swiper:
+  version: VERSION
+  css:
+    base:
+      https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css: {}
+  js:
+    https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js: {}

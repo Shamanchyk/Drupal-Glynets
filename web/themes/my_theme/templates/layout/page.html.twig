@@ -1,0 +1,64 @@
+<div class="layout-container">
+
+  <header role="banner">
+    {{ page.header }}
+  </header>
+
+    {{ page.breadcrumb }}
+
+  <main role="main" class="main">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+      {% if page.dev_drupal %}
+    <div id="dev_drupal" class="dev_drupal">
+      {{ page.dev_drupal }}
+    </div>
+      {% endif %}
+
+      <div class="layout-content content">
+          {{ page.content }}
+      </div>
+
+      {% if page.who_we %}
+    <div id="who_we" class="who_we">
+      <div class="conteiner">
+        {{ page.who_we }}
+      </div>
+    </div>
+      {% endif %}
+
+      {% if page.advant_drupal %}
+    <div id="advant_drupal" class="advant_drupal">
+      <div class="conteiner">
+        {{ page.advant_drupal }}
+      </div>
+    </div>
+      {% endif %}
+
+      {% if page.sites_drupal %}
+    <div id="sites_drupal" class="sites_drupal">
+            {{ page.sites_drupal }}
+    </div>
+      {% endif %}
+
+      {% if page.brands_drupal %}
+    <div id="brands_drupal" class="brands_drupal">
+      <div class="conteiner">
+        {{ page.brands_drupal }}
+      </div>
+    </div>
+      {% endif %}
+
+      {% if page.last_news %}
+    <div id="last_news" class="last_news">
+      {{ page.last_news }}
+    </div>
+      {% endif %}
+
+  </main>
+
+    <footer role="contentinfo">
+        {{ page.footer }}
+    </footer>
+
+</div>

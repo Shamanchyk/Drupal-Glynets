@@ -1,0 +1,24 @@
+name: 'My Theme'
+type: theme
+description: 'A custom Drupal theme for my website.'
+core_version_requirement: ^8 || ^9 || ^10
+package: Custom
+version: VERSION
+base theme: classy
+libraries:
+  - my_theme/global-styling
+  - my_theme/swiper
+#stylesheets-remove:
+#  - 'core/assets/vendor/normalize-css/normalize.css'
+
+regions:
+  header: 'Header'
+  content: 'Content'
+  breadcrumb: 'Breadcrumb'
+  dev_drupal: 'Developer Drupal'
+  who_we: 'Who we'
+  advant_drupal: 'Advantages Drupal'
+  sites_drupal: 'Sites Drupal'
+  brands_drupal: 'Brands Drupal'
+  last_news: 'Last News'
+  footer: 'Footer'

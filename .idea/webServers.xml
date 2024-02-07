@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="07ba9f94-3cbe-4675-8186-18949ca2d2f8" name="Glynets">
+        <fileTransfer rootFolder="/var/www/wn8welrx8v/data/www/wn8welrx8v.schools.glyanec.net" accessType="SFTP" host="wn8welrx8v.schools.glyanec.net" port="22" sshConfigId="f20254a1-f806-48a8-81ea-a50e565b3533" sshConfig="wn8welrx8v@wn8welrx8v.schools.glyanec.net:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

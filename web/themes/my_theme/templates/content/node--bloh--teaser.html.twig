@@ -1,0 +1,24 @@
+{%
+    set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+]
+%}
+<article{{ attributes.addClass(classes) }}>
+    <div{{ content_attributes.addClass('node__content') }}>
+        {{ content.field_anons_image }}
+        <a href="{{ url }}">
+            <div class="bloh_teaser__descr">
+                {{ content.field_anons_descr }}
+            </div>
+        </a>
+        <div class="bloh_teaser__date">
+            {{ node.created.value|date('d.m.Y') }}
+        </div>
+
+    </div>
+</article>

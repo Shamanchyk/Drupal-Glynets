@@ -1,0 +1,823 @@
+@import "nullstyle";
+@import "variables";
+@import "header";
+@import "footer";
+@import "breakpoints";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+html{
+  height: 100%;
+}
+
+body{
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+
+.dialog-off-canvas-main-canvas{
+  height: 100%;
+}
+
+.layout-container{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main{
+  flex: 1 1 auto;
+}
+
+.dev_drupal{
+  padding-top: 15px;
+  @include breakpoints(xl){
+    padding-top: 0px;
+  }
+
+  .region-dev-drupal{
+    position: relative;
+  }
+  .field--name-field-developer-image{
+
+    img{
+      width: 100%;
+      height: 840px;
+
+      @include breakpoints(lg){
+        height: 600px;
+      }
+      @include breakpoints(md){
+        height: 450px;
+      }
+      @include breakpoints(sm){
+        height: 400px;
+      }
+    }
+  }
+  .field--name-field-developer-title{
+    position: absolute;
+    z-index: 1;
+    bottom: 30%;
+    text-align: center;
+    width: 100%;
+    color: $white;
+    @include breakpoints(sm){
+      bottom: 18%;
+    }
+
+    h2{
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%; /* 76.8px */
+      text-transform: uppercase;
+      @include breakpoints(xl){
+        font-size: 60px;
+      }
+      @include breakpoints(lg){
+        font-size: 50px;
+      }
+      @include breakpoints(lgm){
+        font-size: 44px;
+      }
+      @include breakpoints(md){
+        font-size: 38px;
+      }
+      @include breakpoints(sm){
+        font-size: 30px;
+      }
+    }
+    p{
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 110%;
+      margin-top: 16px;
+      @include breakpoints(lg){
+        font-size: 19px;
+      }
+      @include breakpoints(lgm){
+        font-size: 17px;
+      }
+      @include breakpoints(md){
+        font-size: 14px;
+      }
+      @include breakpoints(sm){
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.who_we{
+  margin-top: 128px;
+  @include breakpoints(lg){
+    margin-top: 100px;
+  }
+  @include breakpoints(lgm){
+    margin-top: 80px;
+  }
+  @include breakpoints(md){
+    margin-top: 60px;
+  }
+
+  .region-who-we{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include breakpoints(lg){
+
+    }
+  }
+  #block-my-theme-whoweimagelg{
+    display: none;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include breakpoints(lg){
+      display: block;
+      margin-top: 20px;
+    }
+  }
+
+  .block-block-content19bd2e5b-2ddc-44ac-98b9-564ff5da2bc4,
+  .block-block-content5f936066-a187-42f8-bd58-7d99229656e6{
+    width: 50%;
+    margin-top: 40px;
+    @include breakpoints(lg){
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    p{
+      width: 90%;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      color: $black;
+      @include breakpoints(lg){
+        width: 100%;
+      }
+      @include breakpoints(md){
+        font-size: 15px;
+      }
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin-top: 40px;
+    }
+
+  }
+  .block-block-content007d1a53-d30f-4431-adc2-1dabf9474921,
+  .block-block-content360e5f70-bc41-4cca-afe4-83c02bed795d{
+    width: 48%;
+    margin-top: 40px;
+    @include breakpoints(lg){
+      width: 100%;
+      margin-top: 20px;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .block-block-content007d1a53-d30f-4431-adc2-1dabf9474921{
+    @include breakpoints(lg){
+      display: none;
+    }
+  }
+
+  .block-block-content5f936066-a187-42f8-bd58-7d99229656e6{
+    width: 48%;
+    @include breakpoints(lg){
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
+}
+
+.conteiner{
+  width: 80%;
+  margin: 0 auto;
+  @include breakpoints(xl){
+    width: 90%;
+  }
+}
+
+.field--name-field-who-we-title{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+
+  h3{
+    font-size: 53px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    color: $black;
+    @include breakpoints(lg){
+      font-size: 50px;
+    }
+    @include breakpoints(lgm){
+      font-size: 44px;
+    }
+    @include breakpoints(md){
+      font-size: 38px;
+    }
+    @include breakpoints(sm){
+      font-size: 25px;
+    }
+  }
+  h4{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    color: $black;
+    @include breakpoints(lgm){
+      font-size: 17px;
+    }
+    @include breakpoints(md){
+      font-size: 15px;
+    }
+  }
+}
+
+.advant_drupal{
+  margin-top: 128px;
+  @include breakpoints(lg){
+    margin-top: 100px;
+  }
+  @include breakpoints(lgm){
+    margin-top: 80px;
+  }
+  @include breakpoints(md){
+    margin-top: 60px;
+  }
+
+  .region-advant-drupal{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .block-block-content34e17138-6155-40f9-9562-dd68aa668467{
+    width: 100%;
+    margin-bottom: 40px;
+    @include breakpoints(lg){
+      margin-bottom: 20px;
+    }
+    @include breakpoints(lgm){
+      margin-bottom: 10px;
+    }
+  }
+  .block-block-content6d7b0817-0a2d-477f-a503-4a800306efdb,
+  .block-block-content9318f07f-2690-404e-a582-210618a9181a{
+    width: 50%;
+    @include breakpoints(lg){
+      width: 100%;
+    }
+  }
+
+  .field--name-field-who-we-desc{
+    width: 100%;
+    p{
+      width: 90%;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      color: $black;
+      @include breakpoints(lg){
+        width: 100%;
+        margin-top: 20px;
+      }
+      @include breakpoints(md){
+        margin-top: 10px;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .field--name-field-advantages-parag{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .field__item{
+      width: 25%;
+      @include breakpoints(sm){
+        width: 33%;
+      }
+
+      .paragraph--type--advantages{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        @include breakpoints(sm){
+          gap: 5px;
+        }
+      }
+      .field--name-field-advantages-image{
+        margin-top: 40px;
+        @include breakpoints(lg){
+          margin-top: 20px;
+
+          img{
+            width: 100%;
+          }
+        }
+      }
+      .field--name-field-advantages-desc{
+        width: 100%;
+        h5{
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 150%;
+          font-feature-settings: 'clig' off, 'liga' off;
+          color: $black;
+          text-align: center;
+          @include breakpoints(lg){
+            font-size: 16px;
+          }
+          @include breakpoints(md){
+            font-size: 12px;
+          }
+          @include breakpoints(sm){
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.swiper_container{
+  margin-top: 40px;
+  margin-left: 10%;
+  @include breakpoints(xl){
+    margin-left: 5%;
+  }
+}
+
+.sites_drupal{
+  margin-top: 225px;
+  @include breakpoints(xl){
+    margin-top: 128px;
+  }
+  @include breakpoints(lg){
+    margin-top: 100px;
+  }
+  @include breakpoints(lgm){
+    margin-top: 80px;
+  }
+  @include breakpoints(md){
+    margin-top: 60px;
+  }
+
+  .block-block-contentafae979d-e74a-499f-911e-3e070e64aabc{
+    width: 100%;
+    .slider-width{
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+      @include breakpoints(lgm){
+        width: 40%;
+      }
+      @include breakpoints(sm){
+        width: 60%;
+      }
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.mySwiper2 {
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    @include breakpoints(lg){
+      width: 40%;
+    }
+    @include breakpoints(sm){
+      width: 60%;
+    }
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .node__content{
+    .bloh_teaser__descr{
+      color: $black;
+      h4{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%;
+        margin-top: 24px;
+        @include breakpoints(md){
+          font-size: 17px;
+        }
+      }
+      p{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        margin: 8px 0;
+        @include breakpoints(md){
+          font-size: 13px;
+        }
+        &:after{
+          content: '';
+        }
+      }
+    }
+    .bloh_teaser__date{
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      color: $grayDate;
+      @include breakpoints(md){
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.block-block-contentee413b16-4004-4eaf-87a7-4cdc999ee9f2{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+
+
+  .slider-button{
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+  }
+}
+
+.slider-title_main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include breakpoints(xl){
+    gap: 15px;
+  }
+  @include breakpoints(sm){
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .swiper-button-prev,
+  .swiper-prev,
+  .swiper-button-next,
+  .swiper-next{
+    position: relative;
+    width: 70px;
+    height: 64px;
+    margin-top: 0;
+    left: 0;
+    @include breakpoints(sm){
+     display: none;
+    }
+
+    &:after{
+      content: none;
+    }
+  }
+
+  .swiper-button-prev.swiper-button-disabled,
+  .swiper-button-next.swiper-button-disabled,
+  .swiper-prev.swiper-button-disabled,
+  .swiper-next.swiper-button-disabled {
+    opacity: 1;
+    background-color: $grayBtnDis;
+  }
+}
+
+.field--name-field-slider-title{
+  width: 85%;
+  @include breakpoints(lg){
+    width: 80%;
+  }
+  @include breakpoints(sm){
+    width: 100%;
+  }
+  h4{
+    font-size: 53px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 61.6px */
+    text-transform: uppercase;
+    color: $black;
+    @include breakpoints(lg){
+      font-size: 50px;
+    }
+    @include breakpoints(lgm){
+      font-size: 44px;
+    }
+    @include breakpoints(md){
+      font-size: 38px;
+    }
+    @include breakpoints(sm){
+      font-size: 25px;
+    }
+  }
+}
+.field--name-field-button-left-,
+.field--name-field-button-right-,
+.field--name-field-button-left-2,
+.field--name-field-button-right-2{
+  position: relative;
+  width: 70px;
+  height: 64px;
+  background-color: $blueBtn;
+
+  img{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-next,
+.swiper-prev{
+  width: 70px;
+  height: 64px;
+}
+
+.field--name-field-sites-slider-desc{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 24px;
+
+  h4{
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    color: $black;
+    @include breakpoints(lg){
+      font-size: 23px;
+    }
+    @include breakpoints(md){
+      font-size: 20px;
+    }
+  }
+
+  p{
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: $black;
+    @include breakpoints(lg){
+      font-size: 15px;
+    }
+    @include breakpoints(md){
+      font-size: 13px;
+    }
+  }
+}
+
+.brands_drupal{
+  margin-top: 195px;
+  @include breakpoints(xl){
+    margin-top: 128px;
+  }
+  @include breakpoints(lg){
+    margin-top: 100px;
+  }
+  @include breakpoints(lgm){
+    margin-top: 80px;
+  }
+  @include breakpoints(md){
+    margin-top: 60px;
+  }
+
+  .field--name-field-brands-paragraph{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    @include breakpoints(xl){
+      justify-content: space-around;
+    }
+    @include breakpoints(sm){
+      margin-top: 20px;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .field__item{
+      width: 23%;
+      height: 200px;
+      background: $gray;
+      text-align: center;
+      @include breakpoints(xl){
+        width: 30%;
+      }
+      @include breakpoints(md){
+        height: 150px;
+      }
+      @include breakpoints(sm){
+        width: 48%;
+        height: 120px;
+      }
+
+      .field--name-field-brands-image{
+        width: 100%;
+        position: relative;
+        img{
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%);
+          @include breakpoints(lg){
+            width: 70%;
+            height: 100%;
+            object-fit: scale-down;
+          }
+          @include breakpoints(md){
+
+          }
+        }
+      }
+    }
+  }
+}
+
+.last_news{
+  margin-top: 128px;
+  @include breakpoints(lg){
+    margin-top: 100px;
+  }
+  @include breakpoints(md){
+    margin-top: 60px;
+  }
+}
+
+.layout-container{
+  .region-breadcrumb{
+    width: 80%;
+    margin: 140px auto 0;
+    @include breakpoints(lgm){
+      width: 90%;
+      margin-top: 105px;
+    }
+    @include breakpoints(sm){
+      margin-top: 90px;
+    }
+  }
+}
+
+.breadcrumb{
+  ol{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    @include breakpoints(sm){
+      flex-wrap: wrap;
+    }
+  }
+
+
+  li {
+    &:nth-child(1) {
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      &:after{
+        content: '> ';
+      }
+
+      a {
+        color: #323336;
+      }
+      @include breakpoints(sm){
+        font-size: 15px;
+      }
+    }
+
+    &:nth-child(2) {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%;
+      color: #43BBED;
+      @include breakpoints(lgm){
+        font-size: 18px;
+      }
+      @include breakpoints(sm){
+        font-size: 16px;
+      }
+
+      &:before{
+        content: '';
+      }
+    }
+  }
+}
+
+.content{
+  margin-top: 40px;
+  @include breakpoints(sm){
+    margin-top: 30px;
+  }
+}
+
+.node_container{
+  width: 80%;
+  margin: 0 auto;
+  @include breakpoints(lgm){
+    width: 90%;
+  }
+}
+
+.field--name-field-bloh-desc{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  @include breakpoints(sm){
+    gap: 20px;
+  }
+
+  h2{
+    font-size: 53px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    color: $black;
+    @include breakpoints(lgm){
+      font-size: 40px;
+    }
+    @include breakpoints(sm){
+      font-size: 25px;
+    }
+  }
+
+  p{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: #000;
+    @include breakpoints(lgm){
+      font-size: 16px;
+    }
+    @include breakpoints(sm){
+      font-size: 14px;
+    }
+  }
+  img{
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.feed-icons{
+  display: none;
+}
+
